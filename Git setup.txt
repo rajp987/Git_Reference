@@ -1,0 +1,25 @@
+##Setting up Git
+
+1. Download Git and go to GIT GUI. Select help and create SSH Key. Select Passphrase if want to create additional or else ignore
+
+2. Copy the key and then go to GitHub login and 'SSH & GPG' settings. Paste the desktop Git key and name it.
+
+3. Go to Git Bash and test whether your SSH connection works using the below scripts:
+	https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
+
+
+Generating your public key in Terminal:
+https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+
+
+
+##If you have existing project and want to upload to Git then do below:
+1. Create an empty repositary in Git at the beginning with the name you want
+2. Open the terminal and type in below command
+	Git init
+	git add *
+	git commit-a -m 'Initial comment'
+	git remote add origin <git ssh location>
+	git push origin master
+
+
